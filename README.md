@@ -1,13 +1,15 @@
 # Books-API
 Proyecto FrontEnd:
-Una web con un buscador de libros, en la cual puedas filtrar por tipo de libro. Al seleccionar el tipo de libro saldrán 6 fotos, cada una de ellas con el titulo, autor y una breve descripción, además de un enlace a Amazon.
+
+Una web de libros de los Best Sellers del New York Times, en la cual puedas filtrar por genero de libro. Al seleccionar el genero saldrán toda la lista de libros, cada uno con una foto de la portada con el titulo, autor y una breve descripción, además de un enlace a Amazon.
 
 Tecnologias:
-- HTML
+
 - CSS
 - JavaScript
   
 Requisitos:
+
 - Manipulación dinámica del DOM
 - Manejo de ES6
 - Asincronía
