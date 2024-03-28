@@ -5,6 +5,7 @@ Una web de libros de los Best Sellers del New York Times, en la cual puedas filt
 
 Tecnologias:
 
+- Html
 - CSS
 - JavaScript
   
