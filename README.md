@@ -15,12 +15,6 @@ Requisitos:
 - Gestión del proyecto en Github desde el principio. Uso de ramas.
 - Código limpio, buenas prácticas
 - Diseño responsive, mobile first, semántica HTML5
-  
-Funcionalidades:
-- Buscador
-- Filtrado
-- Vista detalle de producto
-- Slider de libros
 
 Enlace a GitHub Pages:
 - 
