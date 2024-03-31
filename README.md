@@ -4,7 +4,7 @@ Proyecto FrontEnd:
 Una web de libros de los Best Sellers del New York Times, en la cual puedas filtrar por genero de libro. Al seleccionar el genero saldrán toda la lista de libros, cada uno con una foto de la portada con el titulo, autor y una breve descripción, además de un enlace a Amazon.
 
 Tecnologias:
-
+- Html
 - CSS
 - JavaScript
   
