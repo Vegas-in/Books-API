@@ -6,22 +6,14 @@ function paintLists(result) {
     document.getElementById("mainList").innerHTML = "";
     for (let i = 0; i < datalists.length; i++) {
         let mainList = `
-                        <section>
+                        <section class="contList">
                             <article>
-                                <h3>${datalists[i].list_name}</h3>
+                                <h3 class="titleList">${datalists[i].list_name}</h3>
+                                <p class="textAtr">Oldest: ${datalists[i].oldest_published_date}</p>
+                                <p class="textAtr">Newest: ${datalists[i].newest_published_date}</p>
+                                <p class="textAtr">Updated: ${datalists[i].updated}</p>
+                                <button class="buttonGenre" type="button" value="${datalists[i].list_name}">READ MORE...</button>
                             </article>
-                            <article>
-                                <p>Oldest: ${datalists[i].oldest_published_date}</p>
-                            </article>
-                            <article>
-                                <p>Newest: ${datalists[i].newest_published_date}</p>
-                            </article>
-                            <article>
-                                <p>Updated: ${datalists[i].updated}</p>
-                            </article>
-                            <div>
-                            <button class="buttonGenre" type="button" name="button${i}" value="${datalists[i].list_name}">READ MORE...</button>
-                            </div>
                         </section>
                         `;
 
@@ -50,28 +42,33 @@ function paintBooks(result) {
     document.getElementById("mainList").innerHTML = "";
     window.scrollTo(0, 0);
     let backButton = `
-                    <section>
-                        <button id="backButton" type="button" onclick="runApi()">Back</button>
+                    <section id="contBackButton">
+                        <button id="backButton" type="button" onclick="runApi()">BACK</button>
                     </section>
                     `;
-    document.getElementById("mainList").innerHTML = backButton;
+    document.getElementById("divBackButton").innerHTML = backButton;
     for (let i = 0; i < dataBooks.length; i++) {
         let mainBooksList = `
-                        <section>
-                            <article>
-                                <h3>#${dataBooks[i].rank} ${dataBooks[i].title}</h3>
+                        <section class="contBooks">
+                            <div class="contRankTitle">
+                                <article class="contRank">
+                                    <p class="rank">#${dataBooks[i].rank}</p>
+                                </article>
+                                <article id="contTitleBook">
+                                    <h3 class="titleBook"> ${dataBooks[i].title}</h3>
+                                </article>
+                            </div>
+                            <article id="contBookImg">
+                                <img id="bookImg" src="${dataBooks[i].book_image}" alt="${dataBooks[i].book_image}">
                             </article>
                             <article>
-                                <img src="${dataBooks[i].book_image}" alt="Book Image">
+                                <h4><b>Author:</b> ${dataBooks[i].author}</h5>
                             </article>
                             <article>
-                                <h5>Author: ${dataBooks[i].author}</h5>
+                                <p><b>Weeks on list:</b> ${dataBooks[i].weeks_on_list}</p>
                             </article>
                             <article>
-                                <p>Weeks on list: ${dataBooks[i].weeks_on_list}</p>
-                            </article>
-                            <article>
-                                <p>Description: ${dataBooks[i].description}</p>
+                                <p class="descriptionBook"><b>Description:</b> ${dataBooks[i].description}</p>
                             </article>
                             <div>
                             <a href="${dataBooks[i].amazon_product_url}" target="_blank" rel="noopener noreferrer">
