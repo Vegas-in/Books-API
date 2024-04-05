@@ -24,7 +24,6 @@ Enlace a GitHub Pages:
 
 Especificaciones(Fase I):
 
-- Incluir una animación mientras esperamos la carga del contenido.
 - Al cargar la web deben de aparecer todas las listas con los siguientes datos:
   - Nombre completo de la lista
   - Fecha del libro más antiguo en la lista
