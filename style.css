@@ -1,11 +1,204 @@
 *{
-    border: solid 1px black;
+    
+    background-color: lightgray;
+}
+
+header{
+    background-image: url("./assets/NewYork.png");
 }
 
 #nytTitle{
     font-family: 'Limelight';
+    font-size: 40px;
+    background: -webkit-linear-gradient(rgb(252, 5, 5),rgb(62, 2, 2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 15px;
 }
 
 #bsTitle{
+    background-color: rgba(154, 154, 154, 0);
     font-family: 'Rubik Dirt';
+    font-size: 30px;
+    text-shadow: -1px 0 rgb(169, 169, 169), 0 1px  rgb(169, 169, 169), 1px 0 rgb(169, 169, 169), 0 -1px  rgb(169, 169, 169);
+    width: 20%;
+    margin-left: 40px;
+    padding-left: 5px;
+}
+
+.contList{
+    font-family: 'Alike Angular';
+}
+
+.contList :hover{
+    border-radius: 10px;
+    box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: whitesmoke;
+    font-family: 'Chonburi';
+    text-shadow: -1px 0 rgb(169, 169, 169), 0 1px  rgb(169, 169, 169), 1px 0 rgb(169, 169, 169), 0 -1px  rgb(169, 169, 169);
+}
+
+.titleList{
+    padding-left: 5px;
+    border-radius: 5px;
+    display: flex;
+    text-align: center;
+    background-color: rgb(215, 6, 6);
+}
+
+.textAtr{
+    padding-left: 5px;
+    background-color: rgb(199, 198, 198);
+}
+
+.buttonGenre{
+    padding-left: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    font-family: 'Alike Angular';
+    background-color: rgba(255, 241, 215, 0.286);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 20%;
+    cursor: pointer;
+}
+
+#backButton{
+    font-family: 'Alike Angular';
+    background-color: white;
+    border-radius: 5px;
+}
+
+.AmazonProduct{
+    font-family: 'Alike Angular';
+    background-color: white;
+    border-radius: 5px; 
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#contBookImg{
+    display: flex;
+    justify-content: center;
+}
+
+#bookImg{
+    height: 300px;
+    width: 200px;
+    border-radius: 3px;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.contBooks{
+    margin-top: 50px;
+}
+
+.titleBook{
+    margin-left: 10px;
+    font-family: 'Chonburi';
+}
+
+.contRankTitle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.rank{
+    font-size: 30px;
+}
+
+.contRank {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #f50c0c;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    background: -webkit-linear-gradient(rgb(252, 5, 5),rgb(62, 2, 2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.descriptionBook{
+    background-color: rgb(203, 203, 203);
+    padding: 5px;
+}
+  
+.contRank > .rank {
+    margin-top: 11px;
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 20px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(rgb(252, 5, 5),rgb(62, 2, 2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (min-width: 768px){
+
+    header{
+        height: 200px;
+    }
+
+    #divBackButton{
+        display: flex;
+        margin: 50px;
+        justify-content: center;
+    }
+
+    #mainList{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 40px;
+    }
+
+    #nytTitle{
+        font-size: 60px;
+    }
+
+    #bsTitle{
+        font-size: 40px;
+    }
+
+    .contList{
+        width: 350px;
+        margin: 40px;
+    }
+
+    #backButton{
+        height: 40px;
+        width: 70px;
+    }
+
+    .contBooks{
+        width: 350px;
+        margin-top: 50px;
+        margin-right: 50px;
+        font-family: 'Alike Angular';
+    }
+
+    .contRankTitle{
+        display: flex;
+        flex-direction: row;
+        align-items: none;
+    }
+
+    .titleBook{
+        height: 30px;
+        margin-left: 20px;
+        margin-bottom: 30px;
+    }
+
+    #bookImg{
+        height: 450px;
+        width: 300px;
+    }
+
+    .descriptionBook{
+        height: 80px;
+    }
+
 }
